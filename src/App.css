@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg-color: rgb(75, 22, 105);
+  --acc: rgb(110, 214, 228);
+  
+}
+body {
+  font-family: "Open Sans", serif;
+  background: rgb(214,152,255);
+  background: linear-gradient(90deg, rgba(214,152,255,1) 0%, rgba(184,244,255,1) 50%, rgba(199,255,111,1) 100%);
+  color: var(--bg-color);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border: 2px solid var(--bg-color);
+  border-radius: 10px;
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #476b03;
-  min-height: 100vh;
+.weather__info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.title-container__title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 30px;
+  margin: 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="text"] { 
+    margin: 15px;
+    outline: none;
+  
 }
+
+input:-webkit-autofill {
+    
+}
+
+button {
+  
+}
+
+button:active {
+
+}
+
+.weather__info {
+  
+}
+
+.weather__key {
+  
+}
+
+.weather__key:last-child {
+  
+}
+
+.weather__value {
+  
+}
+
+.weather__error {
+  
+}
+
