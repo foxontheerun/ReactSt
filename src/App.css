@@ -6,7 +6,7 @@
 }
 :root {
   --bg-color: rgb(75, 22, 105);
-  --acc: rgb(110, 214, 228);
+  --acc: rgb(173, 245, 255);
   
 }
 body {
@@ -14,6 +14,8 @@ body {
   background: rgb(214,152,255);
   background: linear-gradient(90deg, rgba(214,152,255,1) 0%, rgba(184,244,255,1) 50%, rgba(199,255,111,1) 100%);
   color: var(--bg-color);
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
 }
 
 #root {
@@ -38,6 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 10px;
   
 }
 
@@ -64,39 +67,7 @@ button {
   border-radius: 0;
   height: 30px;
   width: 60px;
-  background: rgb(210, 235, 255);
+  background: var(--acc);
   border: 2px solid var(--bg-color);
   border-radius: 5px;
 }
-input:-webkit-autofill {
-    
-}
-
-button {
-  
-}
-
-button:active {
-
-}
-
-.weather__info {
-  
-}
-
-.weather__key {
-  
-}
-
-.weather__key:last-child {
-  
-}
-
-.weather__value {
-  
-}
-
-.weather__error {
-  
-}
-
