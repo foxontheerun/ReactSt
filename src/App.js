@@ -11,8 +11,6 @@ class App extends React.Component {
     temperature: undefined,
     city: undefined,
     country: undefined,
-    humidity: undefined,
-    description: undefined,
     error: undefined
   }
   getWeather = async (e) => {
@@ -26,8 +24,6 @@ class App extends React.Component {
         temperature: data.main.temp,
         city: data.name,
         country: data.sys.country,
-        humidity: data.main.humidity,
-        description: data.weather[0].description,
         error: ""
       });
     } else {
@@ -35,8 +31,6 @@ class App extends React.Component {
         temperature: undefined,
         city: undefined,
         country: undefined,
-        humidity: undefined,
-        description: undefined,
         error: "Please enter the values."
       });
     }
@@ -44,24 +38,20 @@ class App extends React.Component {
   render() {
     return (
       <div id="main">
-     
-                <div className="col-xs-5 title-container">
-                  <Titles />
-                </div>
-                <div className="col-xs-7 form-container">
-                  <Form getWeather={this.getWeather} />
-                  <Weather 
-                    temperature={this.state.temperature} 
-                    humidity={this.state.humidity}
-                    city={this.state.city}
-                    country={this.state.country}
-                    description={this.state.description}
-                    error={this.state.error}
-                  />
-                </div>
-              </div>
-            
-    );
+        <div className="col-xs-5 title-container">
+          <Titles />
+        </div>
+        <div className="col-xs-7 form-container">
+          <Form getWeather={this.getWeather} />
+          <Weather 
+            temperature={this.state.temperature} 
+            city={this.state.city}
+            country={this.state.country}
+            error={this.state.error}
+          />
+        </div>
+      </div>
+  );
   }
 };
 
